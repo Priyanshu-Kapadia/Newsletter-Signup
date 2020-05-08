@@ -37,11 +37,11 @@ app.post("/", function(req, res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us18.api.mailchimp.com/3.0/lists/75b7b8a7b1";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/list id";
 
     const options = {
       method: "Post",
-      auth: "Priyanshu786:91c610868d133a78941c21948af97eda-us18"
+      auth: "username of mailchimp :api key"
     }
 
 
@@ -72,11 +72,5 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("Server is running on port 3000");
 });
-
-//API Key Of MAilchimp.com
-// 91c610868d133a78941c21948af97eda-us18
-
-// list id or Unique id for audience of Macro
-//75b7b8a7b1
 
 // process.rnv.PORT is the dynamic port for using heroku
